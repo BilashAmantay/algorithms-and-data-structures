@@ -7,11 +7,11 @@ class ListNode:
         self.val = x
         self.next = None
 
-listA = [4,1,8,4,5]
-listB = [5,6,1,8,4,5]
-skipA = 2
-skipB = 3
-intersectVal = 8
+# listA = [4,1,8,4,5]
+# listB = [5,6,1,8,4,5]
+# skipA = 2
+# skipB = 3
+# intersectVal = 8
 
 def makeLinkedList(pylist):
 
@@ -24,11 +24,11 @@ def makeLinkedList(pylist):
     return a
 
 
-alist = makeLinkedList(listA)
-blist = makeLinkedList(listB)
+# alist = makeLinkedList(listA)
+# blist = makeLinkedList(listB)
 
-print(alist.next.next.next.val)
-print(blist.next.next.next.val)
+# print(alist.next.next.next.val)
+# print(blist.next.next.next.val)
 
 def makeCircle(notcircled_list):
     output = ListNode(notcircled_list.val)
@@ -44,20 +44,20 @@ def makeCircle(notcircled_list):
   
     return output
 
-circled_a = makeCircle(alist)
-circled_b = makeCircle(blist)
+# circled_a = makeCircle(alist)
+# circled_b = makeCircle(blist)
 def printall(a_linked_list):
     idx=0
     current = a_linked_list
-    while current.next != None:
+    while current:
         print(current.val)
         current = current.next
         idx+=1
         if idx>40:
             break
-    print(current.val)
+    # print(current.val)
 
-print('circled list ')
-printall(circled_a)
-printall(circled_b)
+# print('circled list ')
+# printall(circled_a)
+# printall(circled_b)
 
