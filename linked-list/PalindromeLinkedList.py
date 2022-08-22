@@ -2,7 +2,7 @@ from make_linked_list_from_list import ListNode, makeLinkedList,printall
 
 head = [1,2,2,1]
 # head = [1,2,3,2,1]
-head = [1,2,3,4,1]
+# head = [1,2,3,4,1]
 head = makeLinkedList(head)
 print('head:'),
 printall(head)
